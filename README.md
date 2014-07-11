@@ -6,7 +6,8 @@ A realtime DHTMLX chat application
 online demo
 --------------
 
-	http://www.dhtmlx.com.br
+	*http://www.dhtmlx.com.br*
+
 
 stack
 --------------
