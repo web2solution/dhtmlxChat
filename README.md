@@ -1,6 +1,6 @@
 # dhtmlxChat 
 
-	A realtime chat application 
+	A realtime DHTMLX chat application 
 	
 	# stack
 	  * RabbitMQ
