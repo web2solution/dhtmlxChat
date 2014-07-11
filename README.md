@@ -27,13 +27,13 @@ install RabbitMQ
 install Perl environment
 --------------
 
-	- *Dancer - a modern and agile Perl framework*
-    	
-       *http://perldancer.org*
-    
-	- *Twiggy - AnyEvent HTTP server for PSGI*
-    	
-        *https://metacpan.org/pod/Twiggy*
+- *Dancer - a modern and agile Perl framework*
+	
+	*http://perldancer.org*
+
+- *Twiggy - AnyEvent HTTP server for PSGI*
+	
+	*https://metacpan.org/pod/Twiggy*
 
 
 	- install perlbrew
