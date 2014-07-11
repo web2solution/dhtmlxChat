@@ -13,7 +13,7 @@ stack
 --------------
 
   - RabbitMQ
-  - Perl(5.16) / Dancer / Twiggy
+  - Perl / Dancer / Twiggy
   - dhtmlx 4.0 + a simple websocket client
 
 
