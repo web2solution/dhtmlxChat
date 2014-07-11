@@ -2,6 +2,10 @@
 
 A realtime DHTMLX chat application 
 
+# online demo
+
+	http://www.dhtmlx.com.br/
+
 # stack
   - RabbitMQ
   - Perl(5.16) / Dancer / Twiggy
