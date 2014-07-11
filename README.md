@@ -63,7 +63,7 @@ Now on terminal:
 	perlbrew switch perl-5.10.1
 
 
-	- install cpan minus -> cpanm tool
+	- install cpan minus (cpanm executable)
 
 	curl -L http://cpanmin.us | perl - App::cpanminus
 
@@ -71,7 +71,13 @@ Now on terminal:
 install perl modules
 --------------
 
-  * cpanm Dancer
-  * cpanm Twiggy
-  * cpanm Web::Hippie
-  * cpanm Moose
+Now on terminal:
+	
+	- cpanm Dancer
+	- cpanm Twiggy
+	- cpanm Web::Hippie
+	- cpanm Moose
+
+# important note
+	
+	this application dont works on Windows OS (sorry Bill)
