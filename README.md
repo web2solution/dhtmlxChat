@@ -99,7 +99,6 @@ Now on terminal:
 
 now open your browser and reach http://localhost/
 
-
 # important note
 	
 	this application dont works on Windows OS (I'm sorry Bill)
