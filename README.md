@@ -4,7 +4,7 @@ A realtime DHTMLX chat application
 
 # online demo
 
-	http://www.dhtmlx.com.br/
+	<a href="http://www.dhtmlx.com.br/" target="_blank">visit the chat</a>
 
 # stack
   - RabbitMQ
@@ -13,12 +13,20 @@ A realtime DHTMLX chat application
   
 # install RabbitMQ 
 
-	http://www.rabbitmq.com/
+	<a href="http://www.rabbitmq.com/" target="_blank">http://www.rabbitmq.com/</a>
 
-	http://www.rabbitmq.com/download.html
+	<a href="http://www.rabbitmq.com/download.html" target="_blank">http://www.rabbitmq.com/download.html</a>
 
 
 # install Perl environment
+
+	- Dancer - a modern and agile Perl framework
+		
+		<a href="http://perldancer.org/" target="_blank">http://perldancer.org/</a>
+    
+	- Twiggy - AnyEvent HTTP server for PSGI
+		
+		<a href="https://metacpan.org/pod/Twiggy" target="_blank">https://metacpan.org/pod/Twiggy</a>
 
 * install perlbrew
 
