@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>dhtmlxChat</title>
+        <!-- CAIRS Framework -->
+		<script type="text/javascript" src="js/CAIRS_Framework/CAIRS_fw.js"></script>
+        <script type="text/javascript" >
+            window.onload = function()
+            {					
+					var cdn_application_path = window.location.protocol + '//' + window.location.host + '/dhtmlxChat/';
+                    var dhx_codebase_path = window.location.protocol + '//' + window.location.host + '/codebase4.0/';
+					
+					/* Dependencies array */
+					var dependenciesToLoad = [
+						/* main */
+						dhx_codebase_path + "dhtmlx.css"
+						,dhx_codebase_path + "dhtmlx.js"
+						,cdn_application_path + "js/elapseMe.js"
+						 
+						 /* JSON parser*/
+						,cdn_application_path + "js/json2.js"
+						,cdn_application_path + "css/dhtmlxChat.css"
+						,cdn_application_path + "controller/dhtmlxChat.js?uistring=" + ( new Date().getTime() )
+						,cdn_application_path + "model/dhtmlxChat_Model.js?uistring=" + ( new Date().getTime() )
+					];
+
+					/* load files and call dhtmlxChat */
+					CAIRS.onDemand.load( dependenciesToLoad, function ()
+					{
+						dhtmlxChat.start( {  
+							
+						} );
+						/* xxx END Component Call xxx */
+					});					
+             }
+         </script>
+         
+	</head>
+    <body>
+    	<audio id="new_user" src="audio/new_user.wav" preload="auto"></audio>
+    	<audio id="new_message" src="audio/new_message.wav" preload="auto"></audio>
+        <audio id="disconnect" src="audio/disconnect.wav" preload="auto"></audio>
+        <audio id="error" src="audio/error.wav" preload="auto"></audio>
+    </body>
+</html>
