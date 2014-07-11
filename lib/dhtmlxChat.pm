@@ -27,9 +27,9 @@ sub _bus{
 				       traits => ['AMQP'],
 					   host   => 'localhost',
                                        port   => 5672,
-                                       user   => 'dhtmlx',
-                                       pass   => 'fuzzy24k',
-                                       vhost  => 'dhtmlx.com.br',
+                                       user   => 'xxxxxx',
+                                       pass   => 'xxxxx',
+                                       vhost  => 'xxxxx.com.br',
                                        exchange => $subject,
                                        queue       => 'welcome',
 									   #routing_key => 'welcome2'
