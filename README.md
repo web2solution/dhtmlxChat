@@ -82,4 +82,4 @@ Now on terminal:
 
 # important note
 	
-	this application dont works on Windows OS (sorry Bill)
+	this application dont works on Windows OS (I'm sorry Bill)
