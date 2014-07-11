@@ -19,9 +19,11 @@ stack
 install RabbitMQ 
 --------------
 
-	http://www.rabbitmq.com
+- *A open source robust messaging system for applications*
 
-	http://www.rabbitmq.com/download.html
+	*http://www.rabbitmq.com*
+
+	*http://www.rabbitmq.com/download.html*
 
 
 install Perl environment
