@@ -36,6 +36,7 @@ install Perl environment
 	*https://metacpan.org/pod/Twiggy*
 
 
+Now on terminal:
 
 	- install perlbrew
 
