@@ -87,7 +87,7 @@ Now on terminal:
 	- cpanm Server::Starter
 
 
-Executing chat application
+Executing the chat application
 --------------
 
 extract the project at /opt/dhtmlxChat
@@ -96,6 +96,9 @@ Now on terminal:
 	
 	- cd /opt/dhtmlxChat
 	- start_server --port=80 -- plackup -R /opt/dhtmlxChat/lib -E deployment -s Twiggy --workers=10 bin/app.pl
+
+
+now open your browser and reach http://localhost/
 
 
 # important note
