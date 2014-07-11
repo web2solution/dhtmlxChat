@@ -38,6 +38,10 @@ install Perl environment
 	
 	*https://metacpan.org/pod/Twiggy*
 
+- *Server::Starter - a superdaemon for hot-deploying server programs*
+
+	*https://metacpan.org/pod/distribution/Server-Starter/start_server*
+
 
 Now on terminal:
 
@@ -71,7 +75,7 @@ Now on terminal:
 	curl -L http://cpanmin.us | perl - App::cpanminus
 
 
-install perl modules
+install Perl modules
 --------------
 
 Now on terminal:
@@ -80,6 +84,19 @@ Now on terminal:
 	- cpanm Twiggy
 	- cpanm Web::Hippie
 	- cpanm Moose
+	- cpanm Server::Starter
+
+
+Executing chat application
+--------------
+
+extract the project at /opt/dhtmlxChat
+
+Now on terminal:
+	
+	- cd /opt/dhtmlxChat
+	- start_server --port=80 -- plackup -R /opt/dhtmlxChat/lib -E deployment -s Twiggy --workers=10 bin/app.pl
+
 
 # important note
 	
