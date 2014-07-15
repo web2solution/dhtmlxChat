@@ -66,7 +66,7 @@ var dhtmlxChat = {
 	start: function (configuration) {
 		var self = this;
 
-		CAIRS.init();
+		$dhx.init();
 
 		self.uid = "dhtmlxChat_" + ((new Date()).getTime());
 
@@ -85,11 +85,11 @@ var dhtmlxChat = {
 		self.model.conf_tabbar.image_path = self.dhtmlx_codebase_path + "imgs/";
 		
 					
-		self.model.conf_window.left = CAIRS.getPagePosition( "x", self.model.conf_window.width, self.model.conf_window.height );
+		self.model.conf_window.left = $dhx.getPagePosition( "x", self.model.conf_window.width, self.model.conf_window.height );
 		self.model.conf_window.top = 50;
 		
-		self.model.conf_window_login.left = CAIRS.getPagePosition( "x", self.model.conf_window_login.width, self.model.conf_window_login.height );
-		self.model.conf_window_login.top = CAIRS.getPagePosition( "y", self.model.conf_window_login.width, self.model.conf_window_login.height );
+		self.model.conf_window_login.left = $dhx.getPagePosition( "x", self.model.conf_window_login.width, self.model.conf_window_login.height );
+		self.model.conf_window_login.top = $dhx.getPagePosition( "y", self.model.conf_window_login.width, self.model.conf_window_login.height );
 
 		
 
@@ -110,7 +110,7 @@ var dhtmlxChat = {
 			self._dataView_public_messages(self.uid);
 			self._dataView_online_users(self.uid);
 			
-			self.socket = CAIRS.socket.connect(
+			self.socket = $dhx.socket.connect(
 			{
 				resource : 	"ws://dhtmlx.com.br/_hippie/ws"
 				//,pipe : "dhtmlxChat"
@@ -542,7 +542,7 @@ var dhtmlxChat = {
 		//self.form[ uid ].setSkin(skin);
 
 
-		CAIRS.dhtmlx.prepareForm(uid + "_form_dhtmlxChat_user_settings", self.model.conf_form, self.form[ uid ]);
+		$dhx.dhtmlx.prepareForm(uid + "_form_dhtmlxChat_user_settings", self.model.conf_form, self.form[ uid ]);
 		
 
 	}
@@ -595,7 +595,7 @@ var dhtmlxChat = {
 		});
 
 
-		CAIRS.dhtmlx.prepareForm(uid + "_form_dhtmlxChat_login", self.model.conf_form_login, self.form_login[ uid ]);
+		$dhx.dhtmlx.prepareForm(uid + "_form_dhtmlxChat_login", self.model.conf_form_login, self.form_login[ uid ]);
 		
 
 	}
@@ -651,7 +651,7 @@ var dhtmlxChat = {
 		});
 
 
-		CAIRS.dhtmlx.prepareForm(uid + "_form_dhtmlxChat_message", self.model.conf_form_message, self.form_message[ uid ]);
+		$dhx.dhtmlx.prepareForm(uid + "_form_dhtmlxChat_message", self.model.conf_form_message, self.form_message[ uid ]);
 		
 
 	}
@@ -686,7 +686,7 @@ var dhtmlxChat = {
 					type : 'new_username'// new_username, message, subscribe    -> mandatory
 					,person : user_hash
 					,message : ' '+user_hash["nick"]+' is online now'
-					,client_id : CAIRS.socket.getClientID()
+					,client_id : $dhx.socket.getClientID()
 				} );
 				
 				
@@ -696,7 +696,7 @@ var dhtmlxChat = {
 		});
 
 
-		CAIRS.dhtmlx.prepareForm(uid + "_form_dhtmlxChat_user_properties", self.model.conf_form_user_properties, self.form_user_properties[ uid ]);
+		$dhx.dhtmlx.prepareForm(uid + "_form_dhtmlxChat_user_properties", self.model.conf_form_user_properties, self.form_user_properties[ uid ]);
 		
 
 	}
